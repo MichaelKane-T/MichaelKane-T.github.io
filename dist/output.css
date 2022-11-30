@@ -529,8 +529,24 @@ video {
   height: 5rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .max-h-\[25rem\] {
   max-height: 25rem;
+}
+
+.max-h-64 {
+  max-height: 16rem;
+}
+
+.max-h-\[276px\] {
+  max-height: 276px;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .max-w-\[25rem\] {
@@ -539,6 +555,10 @@ video {
 
 .max-w-\[24em\] {
   max-width: 24em;
+}
+
+.max-w-\[360px\] {
+  max-width: 360px;
 }
 
 .flex-row {
@@ -555,6 +575,18 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -577,8 +609,17 @@ video {
   border-radius: 0.25rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .border-b-transparent {
@@ -644,6 +685,10 @@ video {
   padding-right: 0.25rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -656,6 +701,11 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -686,6 +736,11 @@ video {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.text-sky-500 {
+  --tw-text-opacity: 1;
+  color: rgb(14 165 233 / var(--tw-text-opacity));
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -705,9 +760,19 @@ video {
   color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
+.hover\:text-sky-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(56 189 248 / var(--tw-text-opacity));
+}
+
 .focus\:border-gray-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.focus\:text-sky-500:focus {
+  --tw-text-opacity: 1;
+  color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -733,6 +798,11 @@ video {
 .active\:bg-red-700:active {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.active\:text-sky-600:active {
+  --tw-text-opacity: 1;
+  color: rgb(2 132 199 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
