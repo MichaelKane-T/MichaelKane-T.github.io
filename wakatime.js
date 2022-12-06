@@ -1,6 +1,6 @@
 async function fetchMyStats() {
   const response = await fetch(
-    "https://nextjs-red-six-46.vercel.app/api/wakatime/danielcamargo",
+    "https://nextjs-red-six-46.vercel.app/api/wakatime/michaelkane",
     {
       method: "GET",
       headers: {
