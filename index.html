@@ -4,24 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        text-area::-webkit-input-placeholder {
+            text-align: start;
+        }
+
+        text-area::-moz-input-placeholder {
+            text-align: start;
+        }
+
+        text-area:-moz-input-placeholder {
+            text-align: start;
+        }
+
+        text-area:-ms-input-placeholder {
+            text-align: start;
+        }
     </style>
-    <link href="/dist/output.css" rel="stylesheet">
+
 
     <script src="wakatime.js" defer></script>
 </head>
 
 <body>
     <!-- Header section -->
-    <header class="py-6 flex flex-col bg-white">
+    <header class="py-6 flex flex-col bg-white" id="header">
         <nav class="flex flex-row space-x-6 items-center justify-center h-20">
             <a class="inline-flex text-gray-500 text-2xl hover:text-gray-900 py-1 px-2 border-b-2 border-b-transparent focus:outline-none focus:border-gray-500"
-                href="#">Skills</a>
+                href="#skills">Skills</a>
             <a class="inline-flex text-gray-500 text-2xl hover:text-gray-900 py-1 px-2 border-b-2 border-b-transparent focus:outline-none focus:border-gray-500"
-                href="#">Projects</a>
+                href="#projects">Projects</a>
             <a class="inline-flex text-gray-500 text-2xl hover:text-gray-900 py-1 px-2 border-b-2 border-b-transparent focus:outline-none focus:border-gray-500"
-                href="#">Contact</a>
+                href="#contact">Contact</a>
         </nav>
         <div
             class="bg-opacity-0 px-12 py-8 flex flex-col justify-center items-center lg:flex-row-reverse lg:justify-between lg:items-center">
@@ -46,7 +63,7 @@
         <!-- Using utilities: -->
     </header>
     <!-- Skills section -->
-    <section class="py-6 flex flex-col bg-gray-100">
+    <section class="py-6 flex flex-col bg-gray-100" id="skills">
         <div class="flex flex-row space-x-6 items-center justify-center h-20">
             <a class="inline-flex text-red-600 text-2xl hover:text-red-400 py-1 px-2 border-b-2 border-b-transparent focus:outline-none focus:border-gray-500"
                 href="#">Skills</a>
@@ -166,7 +183,7 @@
         <!-- Using utilities: -->
     </section>
     <!-- Rrojects section -->
-    <section class="py-6 flex flex-col bg-white">
+    <section class="py-6 flex flex-col bg-white" id="projects">
         <div class="flex flex-row space-x-6 items-center justify-center h-20">
             <a class="inline-flex text-red-600 text-2xl hover:text-red-400 py-1 px-2 border-b-2 border-b-transparent focus:outline-none focus:border-gray-500"
                 href="#">Projects</a>
@@ -223,7 +240,29 @@
         </div>
         <!-- Using utilities: -->
     </section>
-    <section>
-
+    <!--Contact Section-->
+    <section class="py-6 flex flex-col bg-gray-100" id="contact">
+        <div class="flex flex-row space-x-6 items-center justify-center h-20">
+            <a class="inline-flex text-red-600 text-2xl hover:text-red-400 py-1 px-2 border-b-2 border-b-transparent focus:outline-none focus:border-gray-500"
+                href="#">Contact me</a>
+        </div>
+        <div class="flex flex-col lg:flex-row bg-opacity-0 justify-between lg:py-8 gap-8 items-center">
+            <div
+                class="rounded items-center justify-start overflow-hidden  ml-8  bg-gray-[#FFFFFF] w-[400px] h-[400px]">
+                <img src="contact-me.png" alt="card picture" class="object-cover" />
+            </div>
+            <div class="flex flex-col items-start pb-4 gap-8 overflow-hidden flex-grow-0 w-[464px] h-[288px]">
+                <form action="/action_page.php">
+                    <input type="text" id="email" name="email" placeholder="Email Address"
+                        class="flex flex-row items-center p-4 w-[432px] h-[60px] bg-white border border-gray-400  boxshadow"><br>
+                    <input type="text" id="message" name="message" placeholder="Message..."
+                        class="flex flex-row items-start p-4 w-[432px] h-[128px] bg-white border border-gray-400 text-start boxshadow"><br>
+                    <button
+                        class="w-[432px] h-[56px] bg-sky-600 hover:bg-sky-700 text-white font-bold lg:w-[101px] lg:h-[56px]">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
     </section>
 </body>
