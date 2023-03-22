@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="wakatime.js" defer></script>
+</head>
+
+<body class="bg-slate-100">
+    <div class="flex flex-col md:flex md:flex-row-reverse">
+        <div class=" flex flex-col items-center md:flex md:flex-row  md:w-[75%] md:m-40">
+            <!-- picture-->
+            <div class="max-w-[14rem] max-h-[1 4rem] overflow-hidden">
+                <img src="/src/Resources/me.jpg" alt="My Picture" class="object-cover" />
+            </div>
+            <div class="md:m-10 gap-1">
+                <h1 class="font-serif font-bold text-black text-4xl">Michael kane</h1>
+                <h3 class="font-serif font-semibold text-black text-2xl">Computer Engineer </h3>
+                <p class="font-sans font-thin text-gray-500 text-xl max-w-[24em] text-center lg:text-left">
+                    I’m a Computer Engineer and here is my portfolio website. Here you’ll
+                    learn about my journey. Click below to contact and connect
+                </p>
+                <button
+                    class="inline-flex bg-transparent hover:bg-gray-300 text-gray-900 font-semibold py-2 px-4 border border-gray-900 hover:border-transparent rounded mt-1">
+                    <svg aria-hidden="true"
+                        class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
+                            clip-rule="evenodd"></path>
+                    </svg> Connect
+                </button>
+            </div>
+        </div>
+        <!--Sidebar button-->
+        <div class=" md:w-[25%]">
+            <button data-drawer-target="cta-button-sidebar" data-drawer-toggle="cta-button-sidebar"
+                aria-controls="cta-button-sidebar" type="button"
+                class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                <span class="sr-only">Open sidebar</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" fill-rule="evenodd"
+                        d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                    </path>
+                </svg>
+            </button>
+            <!--Sidebar-->
+            <aside id="cta-button-sidebar"
+                class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+                aria-label="Sidebar">
+                <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 ">
+                    <ul class="mt-60 space-y-2">
+                        <li>
+                            <a href="/src/dashboard.html"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-300">
+                                <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                                    <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                                </svg>
+                                <span class="ml-3">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/src/index.html"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-300 ">
+                                <svg aria-hidden="true"
+                                    class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="flex-1 ml-3 whitespace-nowrap">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-300">
+                                <svg aria-hidden="true"
+                                    class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75  "
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="flex-1 ml-3 whitespace-nowrap">About User</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-300 ">
+                                <svg aria-hidden="true"
+                                    class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="flex-1 ml-3 whitespace-nowrap">Connect</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!--Footer Section-->
+    </div>
+    <footer class="flex flex-col justify-items-center pt-6 gap-8 h-52 bg-slate-100 md:flex-row md:justify-evenly ">
+        <div class="text-gray-900 flex flex-col justify-items-center text-center mt-24 ">
+            <h3 class="font-serif font-thin">My social media links</h3>
+            <div class="flex flex-row justify-center gap-4 mt-3 ">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                        <path fill="#8c9eff"
+                            d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z">
+                        </path>
+                    </svg>
+
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                        <path fill="#33d375"
+                            d="M33,8c0-2.209-1.791-4-4-4s-4,1.791-4,4c0,1.254,0,9.741,0,11c0,2.209,1.791,4,4,4s4-1.791,4-4	C33,17.741,33,9.254,33,8z">
+                        </path>
+                        <path fill="#33d375"
+                            d="M43,19c0,2.209-1.791,4-4,4c-1.195,0-4,0-4,0s0-2.986,0-4c0-2.209,1.791-4,4-4S43,16.791,43,19z">
+                        </path>
+                        <path fill="#40c4ff"
+                            d="M8,14c-2.209,0-4,1.791-4,4s1.791,4,4,4c1.254,0,9.741,0,11,0c2.209,0,4-1.791,4-4s-1.791-4-4-4	C17.741,14,9.254,14,8,14z">
+                        </path>
+                        <path fill="#40c4ff"
+                            d="M19,4c2.209,0,4,1.791,4,4c0,1.195,0,4,0,4s-2.986,0-4,0c-2.209,0-4-1.791-4-4S16.791,4,19,4z">
+                        </path>
+                        <path fill="#e91e63"
+                            d="M14,39.006C14,41.212,15.791,43,18,43s4-1.788,4-3.994c0-1.252,0-9.727,0-10.984	c0-2.206-1.791-3.994-4-3.994s-4,1.788-4,3.994C14,29.279,14,37.754,14,39.006z">
+                        </path>
+                        <path fill="#e91e63"
+                            d="M4,28.022c0-2.206,1.791-3.994,4-3.994c1.195,0,4,0,4,0s0,2.981,0,3.994c0,2.206-1.791,3.994-4,3.994	S4,30.228,4,28.022z">
+                        </path>
+                        <path fill="#ffc107"
+                            d="M39,33c2.209,0,4-1.791,4-4s-1.791-4-4-4c-1.254,0-9.741,0-11,0c-2.209,0-4,1.791-4,4s1.791,4,4,4	C29.258,33,37.746,33,39,33z">
+                        </path>
+                        <path fill="#ffc107"
+                            d="M28,43c-2.209,0-4-1.791-4-4c0-1.195,0-4,0-4s2.986,0,4,0c2.209,0,4,1.791,4,4S30.209,43,28,43z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                        <path fill="#0288D1"
+                            d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+                        </path>
+                        <path fill="#FFF"
+                            d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
