@@ -1,11 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <script src="wakatime.js" defer></script>
+    <script src="dist/output.js" defer></script>
+    <!-- my stuff -->
 </head>
 
 <body class="bg-slate-100">
@@ -34,7 +36,6 @@
                 </button>
             </div>
         </div>
-
         <!--Sidebar button-->
         <div class=" md:w-[25%]">
             <button data-drawer-target="cta-button-sidebar" data-drawer-toggle="cta-button-sidebar"
@@ -55,17 +56,6 @@
                 <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 ">
                     <ul class="mt-60 space-y-2">
                         <li>
-                            <a href="/src/dashboard.html"
-                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-300">
-                                <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75"
-                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
-                                    <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
-                                </svg>
-                                <span class="ml-3">Dashboard</span>
-                            </a>
-                        </li>
-                        <li>
                             <a href="/index.html"
                                 class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-300 ">
                                 <svg aria-hidden="true"
@@ -78,7 +68,19 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="/src/dashboard.html"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-300">
+                                <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                                    <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                                </svg>
+                                <span class="ml-3">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/src/about.html"
                                 class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-300">
                                 <svg aria-hidden="true"
                                     class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75  "
