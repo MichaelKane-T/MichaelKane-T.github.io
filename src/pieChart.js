@@ -15,8 +15,8 @@ const fetchData = async () => {
       }
     };
 
-    const languageNames = languagesData.map(data => data.name);
-    const languageTimes = languagesData.map(data => Math.round(data.total_seconds / 60));
+    const languageNames = languagesData.map(data => data.data.name);
+    const languageTimes = languagesData.map(data => Math.round(da.tadata.total_seconds / 60));
 
     const dataPie = {
       labels: languageNames,
