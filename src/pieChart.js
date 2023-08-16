@@ -2,7 +2,7 @@
   try {
     // Make API request to Wakatime to retrieve last 7 days' coding time data
     const response = await fetch(
-      "https://nextjs-red-six-46.vercel.app/api/wakatime/michaelkane",
+      "https://wakatime.com/share/@MichaelKane/98c34a98-9ad6-4d68-b520-ef6c57a8318d.json",
       {
         method: "GET",
         headers: {
