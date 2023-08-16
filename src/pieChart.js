@@ -1,24 +1,19 @@
-(async function () {
-  try {
-    // Make API request to Wakatime to retrieve last 7 days' coding time data
-    const response = await fetch(
-      "https://wakatime.com/share/@MichaelKane/98c34a98-9ad6-4d68-b520-ef6c57a8318d.json",
-      {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-        },
+const fetchData = async () => {
+      try {
+        const response = await axios.get('https://wakatime.com/share/@MichaelKane/98c34a98-9ad6-4d68-b520-ef6c57a8318d.json');
+        const responseData = response; // Parse the response data as JSON
+        const data = responseData.data
+        const mappedArray = data.data.map(item => ({
+          name: item.name,
+          percent: item.percent,
+          // ... map other properties as needed
+        }));
+        setLanguagesData(mappedArray); // Update the state with the parsed data
+        
+      } catch (error) {
+        console.log(error);
       }
-    );
-
-    if (!response.ok) {
-      console.error("Fetch failed");
-      return;
-    }
-
-    const data = await response;
-
-    const languagesData = data.data.languages;
+    };
 
     const dataPie = {
       labels: languagesData.map((language) => language.name),
