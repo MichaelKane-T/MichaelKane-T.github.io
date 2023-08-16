@@ -36,7 +36,6 @@ const fetchData = async () => {
         },
       ],
     };
-
     };
 
     // Create chart configuration object
