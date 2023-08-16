@@ -15,14 +15,15 @@ const fetchData = async () => {
       }
     };
 
+    const languageNames = languagesData.map(data => data.name);
+    const languageTimes = languagesData.map(data => Math.round(data.total_seconds / 60));
+
     const dataPie = {
-      labels: languagesData.map((language) => language.name),
+      labels: languageNames,
       datasets: [
         {
           label: "Coding Time by Language",
-          data: languagesData.map((language) =>
-            Math.round(language.total_seconds / 60)
-          ),
+          data: languageTimes,
           backgroundColor: [
             "#FF6384",
             "#36A2EB",
@@ -34,6 +35,8 @@ const fetchData = async () => {
           hoverOffset: 4,
         },
       ],
+    };
+,
     };
 
     // Create chart configuration object
