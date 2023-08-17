@@ -5,7 +5,6 @@ const fetchData = async () => {
     const mappedArray = responseData.data.map(item => ({
       name: item.name,
       percent: item.percent,
-      total_seconds: item.total_seconds, // Assuming this property exists
       // ... map other properties as needed
     }));
     setLanguagesData(mappedArray); // Update the state with the parsed data
@@ -35,8 +34,16 @@ const fetchData = async () => {
     const configPie = {
       type: "pie",
       data: dataPie,
-      options: {},
-    };
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: 'Coding Pie Chart'
+          },}}
 
     // Create chart using Chart.js
     const chartPie = new Chart(document.getElementById("chartPie"), configPie);
