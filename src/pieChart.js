@@ -1,22 +1,16 @@
 const fetchData = async () => {
-      try {
-        const response = await axios.get('https://wakatime.com/share/@MichaelKane/98c34a98-9ad6-4d68-b520-ef6c57a8318d.json');
-        const responseData = response; // Parse the response data as JSON
-        const data = responseData.data
-        const mappedArray = data.data.map(item => ({
-          name: item.name,
-          percent: item.percent,
-          // ... map other properties as needed
-        }));
-        setLanguagesData(mappedArray); // Update the state with the parsed data
-        
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    const languageNames = languagesData.map(data => data.data.name);
-    const languageTimes = languagesData.map(data => Math.round(da.tadata.total_seconds / 60));
+  try {
+    const response = await axios.get('https://wakatime.com/share/@MichaelKane/98c34a98-9ad6-4d68-b520-ef6c57a8318d.json');
+    const responseData = response.data; // Parse the response data as JSON
+    const mappedArray = responseData.data.map(item => ({
+      name: item.name,
+      percent: item.percent,
+      total_seconds: item.total_seconds, // Assuming this property exists
+      // ... map other properties as needed
+    }));
+    setLanguagesData(mappedArray); // Update the state with the parsed data
+    const languageNames = mappedArray.map(data => data.name);
+    const languageTimes = mappedArray.map(data => data.percent));
 
     const dataPie = {
       labels: languageNames,
@@ -36,7 +30,6 @@ const fetchData = async () => {
         },
       ],
     };
-    };
 
     // Create chart configuration object
     const configPie = {
@@ -50,4 +43,7 @@ const fetchData = async () => {
   } catch (error) {
     console.log(error);
   }
-})();
+};
+
+// Call the fetchData function
+fetchData();
